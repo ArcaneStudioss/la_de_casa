@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lá de Casa Artisanal - Massas Artesanais Tradicionais</title>
+    <meta name="description" content="Massas artesanais feitas com amor e tradição italiana. Da nossa casa para a sua - experimente o sabor autêntico das receitas tradicionais." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fldecasa9153back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-warm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-12 h-12 text-primary" viewBox="0 0 48 48" fill="currentColor">
+                        <path d="M24 4L8 12v8c0 10 6 18.5 16 20 10-1.5 16-10 16-20v-8L24 4zm-2 32h4v4h-4v-4zm0-16h4v12h-4V20z"/>
+                        <rect x="18" y="14" width="12" height="2" rx="1"/>
+                        <rect x="16" y="18" width="16" height="2" rx="1"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-playfair font-bold text-2xl text-primary">Lá de Casa</h1>
+                        <p class="font-dancing text-sm text-secondary">Artisanal</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="font-montserrat font-medium text-primary border-b-2 border-primary pb-1">Início</a>
+                    <a href="product_catalog.html" class="font-montserrat font-medium text-text-secondary hover:text-primary transition-gentle">Catálogo</a>
+                    <a href="contact_orders.html" class="font-montserrat font-medium text-text-secondary hover:text-primary transition-gentle">Contato</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="homepage.html" class="font-montserrat font-medium text-primary py-2">Início</a>
+                    <a href="product_catalog.html" class="font-montserrat font-medium text-text-secondary py-2">Catálogo</a>
+                    <a href="contact_orders.html" class="font-montserrat font-medium text-text-secondary py-2">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-secondary/20 to-primary/20 z-10"></div>
+        
+        <!-- Carousel Container -->
+        <div class="relative h-full" id="hero-carousel">
+            <!-- Slide 1 - Pasta Making Process -->
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-100" data-slide="0">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?q=80&w=2940&auto=format&fit=crop" alt="Hands kneading pasta dough" class="w-full h-full object-cover" loading="eager" onerror="this.src='https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+            </div>
+            
+            <!-- Slide 2 - Fresh Ingredients -->
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="1">
+                <img src="https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Fresh pasta ingredients" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg'; this.onerror=null;" />
+            </div>
+            
+            <!-- Slide 3 - Finished Pasta -->
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" data-slide="2">
+                <img src="https://images.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg" alt="Perfectly cooked ravioli" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 z-20 flex items-center justify-center">
+            <div class="text-center text-white px-4 max-w-4xl">
+                <h1 class="font-playfair font-bold text-5xl md:text-7xl mb-6 drop-shadow-lg">
+                    Lá de Casa Artisanal
+                </h1>
+                <p class="font-dancing text-2xl md:text-4xl mb-8 text-accent-200">
+                    Da nossa casa para a sua
+                </p>
+                <p class="font-source-sans text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Massas artesanais feitas com receitas tradicionais italianas, ingredientes selecionados e muito amor. 
+                    Experimente o sabor autêntico que só o feito à mão pode proporcionar.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="product_catalog.html" class="btn-primary text-lg px-8 py-4">
+                        Ver Catálogo
+                    </a>
+                    <a href="contact_orders.html" class="btn-secondary text-lg px-8 py-4">
+                        Fazer Pedido
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
+            <button class="w-3 h-3 rounded-full bg-white opacity-100 transition-opacity" data-slide-to="0"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide-to="1"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 transition-opacity" data-slide-to="2"></button>
+        </div>
+    </section>
+
+    <!-- Brand Pillars Section -->
+    <section class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-secondary mb-4">
+                    Nossos Valores
+                </h2>
+                <p class="font-source-sans text-lg text-text-secondary max-w-2xl mx-auto">
+                    Três pilares fundamentais que definem a qualidade e autenticidade das nossas massas artesanais
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Traditional Recipes -->
+                <div class="card text-center group hover:scale-105 transition-all duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2940&auto=format&fit=crop" alt="Receitas tradicionais italianas" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-2xl text-secondary mb-4">
+                        Receitas Tradicionais
+                    </h3>
+                    <p class="font-source-sans text-text-secondary leading-relaxed">
+                        Receitas italianas legítimas, testadas ao máximo até atingir seu mais alto nível de sabor e qualidade.
+                    </p>
+                </div>
+
+                <!-- Selected Ingredients -->
+                <div class="card text-center group hover:scale-105 transition-all duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Ingredientes selecionados" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/08/23/15/52/fresh-herbs-1614359_1280.jpg'; this.onerror=null;" />
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-2xl text-secondary mb-4">
+                        Ingredientes Selecionados
+                    </h3>
+                    <p class="font-source-sans text-text-secondary leading-relaxed">
+                        Apenas os melhores ingredientes frescos e naturais, cuidadosamente escolhidos para garantir 
+                        qualidade superior em cada massa.
+                    </p>
+                </div>
+
+                <!-- Made with Love -->
+                <div class="card text-center group hover:scale-105 transition-all duration-300">
+                    <div class="mb-6">
+                        <img src="https://images.pixabay.com/photo/2016/08/23/15/52/fresh-herbs-1614359_1280.jpg" alt="Feito com amor" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="w-16 h-16 bg-error rounded-full flex items-center justify-center mx-auto">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-2xl text-secondary mb-4">
+                        Feito com Amor
+                    </h3>
+                    <p class="font-source-sans text-text-secondary leading-relaxed">
+                        Cada massa é preparada com carinho e dedicação, transformando ingredientes simples em 
+                        experiências gastronômicas inesquecíveis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Carousel -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-secondary mb-4">
+                    Especialidades
+                </h2>
+                <p class="font-source-sans text-lg text-text-secondary max-w-2xl mx-auto">
+                    Descubra nossas criações especiais, preparadas com ingredientes sazonais e receitas exclusivas
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Ravioli de Ricota e Espinafre -->
+                <div class="card group hover:shadow-warm-lg transition-all duration-300 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop" alt="Ravioli de Ricota e Espinafre" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-source-sans text-sm"></p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-secondary mb-2">
+                        Fettuccine
+                    </h3>
+                    <p class="font-source-sans text-text-secondary mb-4 leading-relaxed">
+                        Pacote de massa Fettuccine 250g
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-montserrat font-bold text-2xl text-primary">R$ 15,00</span>
+                        <span class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</span>
+                    </div>
+                </div>
+
+                <!-- Cappelletti da Nonna -->
+                <div class="card group hover:shadow-warm-lg transition-all duration-300 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Cappelletti da Nonna" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-source-sans text-sm">Frango ou quatro queijos</p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-secondary mb-2">
+                        Cappelletti
+                    </h3>
+                    <p class="font-source-sans text-text-secondary mb-4 leading-relaxed">
+                        Pacote de Cappelletti 250g
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-montserrat font-bold text-2xl text-primary">R$ 20,00</span>
+                        <span class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</span>
+                    </div>
+                </div>
+
+                <!-- Tortellini ai Funghi -->
+                <div class="card group hover:shadow-warm-lg transition-all duration-300 overflow-hidden">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg" alt="Tortellini ai Funghi" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="font-source-sans text-sm">Cogumelos frescos, ricota, trufa</p>
+                        </div>
+                    </div>
+                    <h3 class="font-playfair font-bold text-xl text-secondary mb-2">
+                        Tortellini ai Funghi
+                    </h3>
+                    <p class="font-source-sans text-text-secondary mb-4 leading-relaxed">
+                        Delicados tortellini recheados com mix de cogumelos frescos e toque de trufa.
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <span class="font-montserrat font-bold text-2xl text-primary">R$ 35,90</span>
+                        <span class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="product_catalog.html" class="btn-primary text-lg px-8 py-4">
+                    Ver Catálogo Completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História Preview -->
+    <section class="py-20 bg-surface">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-playfair font-bold text-4xl md:text-5xl text-secondary">
+                        Nossa História
+                    </h2>
+                    <p class="font-dancing text-2xl text-primary">
+                        Tradição italiana, coração brasileiro
+                    </p>
+                    <p class="font-source-sans text-lg text-text-secondary leading-relaxed">
+                        O Lá de Casa nasceu da paixão de um guri de 16 anos, Gabriel, pelo sabor das coisas simples e bem feitas. Em Santo Antônio da Patrulha, onde tradição e família caminham juntas, ele resolveu arregaçar as mangas e trazer à mesa massas artesanais feitas com carinho
+                    </p>
+                    <p class="font-source-sans text-lg text-text-secondary leading-relaxed">
+                        Cada receita é um pedacinho da nossa história — do nhoque recheado que lembra o almoço de domingo até a lasanha bolonhesa que reúne todo mundo em volta da mesa. No Lá de Casa, tu não compra só uma massa, tu leva um pedacinho da nossa casa pra tua.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img src="img_chef.jpg" alt="Fundador da Lá de Casa" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                        <div>
+                            <p class="font-montserrat font-bold text-secondary">Gabriel Dias</p>
+                            <p class="font-source-sans text-sm text-text-secondary">Fundador & Chef</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Família preparando massa" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg'; this.onerror=null;" />
+                    <img src="https://images.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_1280.jpg" alt="Cozinha artesanal" class="w-full h-48 object-cover rounded-lg mt-8" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop" alt="Ingredientes tradicionais" class="w-full h-48 object-cover rounded-lg -mt-8" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                    <img src="https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Massa fresca sendo preparada" class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Instagram Feed -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair font-bold text-4xl md:text-5xl text-secondary mb-4">
+                    @massas_ladecasa
+                </h2>
+                <p class="font-source-sans text-lg text-text-secondary max-w-2xl mx-auto">
+                    Acompanhe nosso dia a dia e veja como suas massas favoritas são preparadas com carinho
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2940&auto=format&fit=crop" alt="Instagram post - massa sendo preparada" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+                    <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Instagram post - ravioli frescos" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+                    <img src="https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg" alt="Instagram post - ingredientes frescos" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square overflow-hidden rounded-lg group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop" alt="Instagram post - cliente feliz" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://instagram.com/massas_ladecasa" target="_blank" class="btn-secondary text-lg px-8 py-4 inline-flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span>Seguir no Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <svg class="w-12 h-12 text-accent" viewBox="0 0 48 48" fill="currentColor">
+                            <path d="M24 4L8 12v8c0 10 6 18.5 16 20 10-1.5 16-10 16-20v-8L24 4zm-2 32h4v4h-4v-4zm0-16h4v12h-4V20z"/>
+                            <rect x="18" y="14" width="12" height="2" rx="1"/>
+                            <rect x="16" y="18" width="16" height="2" rx="1"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-playfair font-bold text-2xl text-accent">Lá de Casa</h3>
+                            <p class="font-dancing text-lg">Artisanal</p>
+                        </div>
+                    </div>
+                    <p class="font-source-sans text-gray-300 leading-relaxed mb-6">
+                        Massas artesanais feitas com amor e tradição italiana. Da nossa casa para a sua, 
+                        levamos o sabor autêntico das receitas tradicionais com ingredientes selecionados e muito carinho.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://instagram.com/ladecasaartisanal" target="_blank" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-600 transition-colors">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5551997718375" target="_blank" class="w-10 h-10 bg-success rounded-full flex items-center justify-center hover:bg-success-600 transition-colors">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-montserrat font-bold text-lg mb-6 text-accent">Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="font-source-sans text-gray-300 hover:text-accent transition-colors">Início</a></li>
+                        <li><a href="product_catalog.html" class="font-source-sans text-gray-300 hover:text-accent transition-colors">Catálogo</a></li>
+                        <li><a href="contact_orders.html" class="font-source-sans text-gray-300 hover:text-accent transition-colors">Contato</a></li>
+                        <li><a href="javascript:void(0)" class="font-source-sans text-gray-300 hover:text-accent transition-colors">Nossa História</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-montserrat font-bold text-lg mb-6 text-accent">Contato</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span class="font-source-sans text-gray-300">(51) 99771-8375</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="font-source-sans text-gray-400 text-sm">
+                        © 2025 Lá de Casa. Todos os direitos reservados.
+                    </p>
+                    <p class="font-source-sans text-gray-400 text-sm mt-4 md:mt-0">
+                        Feito com ❤️ para levar o melhor da tradição italiana para sua mesa
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/5551997718375?text=Olá! Gostaria de fazer um pedido das massas artesanais." target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-success rounded-full flex items-center justify-center shadow-warm-lg hover:shadow-warm-lg hover:scale-110 transition-all duration-300 z-50">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hero carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('[data-slide]');
+        const slideButtons = document.querySelectorAll('[data-slide-to]');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            
+            slideButtons.forEach((button, i) => {
+                button.style.opacity = i === index ? '1' : '0.5';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 5000);
+
+        // Manual slide navigation
+        slideButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+
+        // Initialize carousel
+        showSlide(0);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
