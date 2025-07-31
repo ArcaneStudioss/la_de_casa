@@ -91,11 +91,11 @@
                     <button class="filter-btn" data-filter="fettuccine">
                         Fettuccine
                     </button>
-                    <button class="filter-btn" data-filter="cappelletti">
-                        Cappelletti
+                    <button class="filter-btn" data-filter="nhoque">
+                        Nhoque
                     </button>
-                    <button class="filter-btn" data-filter="lasanha">
-                        Lasanha
+                    <button class="filter-btn" data-filter="curtas">
+                        Curtas
                     </button>
                     <button class="filter-btn" data-filter="recheados">
                         Recheados
@@ -146,15 +146,10 @@
             <!-- Product Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="products-grid">
                 <!-- Ravioli de Ricota e Espinafre -->
-                <div class="product-card group" data-category="ravioli" data-price="28.90" data-name="Ravioli de Ricota e Espinafre">
+                <div class="product-card group" data-category="recheados" data-price="17.00" data-name="Sofiatelli">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop" alt="Ravioli de Ricota e Espinafre" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                        <img src="img_sof.jpg" alt="Sofiatelli" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
                         
-                        <!-- Badges -->
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-vegetarian">Vegetariano</span>
-                            <span class="badge-fresh">Fresco</span>
-                        </div>
                         
                         <!-- Quick Actions -->
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -173,18 +168,19 @@
                         <!-- Hover Overlay -->
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Ricota fresca, espinafre orgânico, parmesão</p>
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 3-4 minutos</p>
+                                <p class="font-source-sans text-sm mb-2">Recheios: Carne, Frango ou 4 Queijos</p>
+                                <p class="font-source-sans text-xs">Tempo de cozimento: 6-8 minutos em algum molho</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Ravioli de Ricota e Espinafre
+                            Sofiatelli
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Massa fresca recheada com ricota cremosa e espinafre orgânico, temperada com ervas finas.
+                            Massa recheada, dobrada com carinho. Ideal com molhos cremosos e sabores marcantes.
+                        
                         </p>
                         
                         <!-- Rating -->
@@ -211,10 +207,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 28,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 17,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Ravioli de Ricota e Espinafre', '28.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Sofiatelli', '17.00')">
                                 Pedir
                             </button>
                         </div>
@@ -222,14 +218,9 @@
                 </div>
 
                 <!-- Cappelletti da Nonna -->
-                <div class="product-card group" data-category="cappelletti" data-price="32.90" data-name="Cappelletti da Nonna">
+                <div class="product-card group" data-category="recheados" data-price="17.00" data-name="Caneloe">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Cappelletti da Nonna" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-premium">Premium</span>
-                            <span class="badge-traditional">Tradicional</span>
-                        </div>
+                        <img src="img_hist1.jpg" alt="Cappelletti da Nonna" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'; this.onerror=null;" />
                         
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
@@ -246,18 +237,18 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Carne bovina, presunto, parmesão envelhecido</p>
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 4-5 minutos</p>
+                                <p class="font-source-sans text-sm mb-2">Ingredientes: Carne, Frango, 4 queitos</p>
+                                <p class="font-source-sans text-xs">Tempo de cozimento: 5-6 minutos em algum molho</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Cappelletti da Nonna
+                            Canelone
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Receita tradicional da família com recheio de carnes nobres e queijos selecionados.
+                            Tubo de massa recheado, enrolado com sabor. Perfeito gratinado com molho!
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -283,10 +274,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 32,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 17,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Cappelletti da Nonna', '32.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Canelone', '17.00')">
                                 Pedir
                             </button>
                         </div>
@@ -294,14 +285,9 @@
                 </div>
 
                 <!-- Tortellini ai Funghi -->
-                <div class="product-card group" data-category="tortellini" data-price="35.90" data-name="Tortellini ai Funghi">
+                <div class="product-card group" data-category="curtas" data-price="19.00" data-name="Farfalle">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg" alt="Tortellini ai Funghi" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1587740908075-9e245070dfaa?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-gourmet">Gourmet</span>
-                            <span class="badge-seasonal">Sazonal</span>
-                        </div>
+                        <img src="img_farf.jpg" alt="Farfalle" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
                         
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
@@ -318,18 +304,17 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Cogumelos frescos, ricota, trufa</p>
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 3-4 minutos</p>
+                                <p class="font-source-sans text-xs">Tempo de cozimento: 5-6 minutos</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Tortellini ai Funghi
+                            Farfalle
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Delicados tortellini recheados com mix de cogumelos frescos e toque de trufa.
+                            Massa em formato de gravata, leve e versátil. Vai bem com molhos suaves.
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -355,10 +340,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 35,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Tortellini ai Funghi', '35.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Farfalle', '19.00')">
                                 Pedir
                             </button>
                         </div>
@@ -366,15 +351,10 @@
                 </div>
 
                 <!-- Agnolotti del Plin -->
-                <div class="product-card group" data-category="ravioli" data-price="38.90" data-name="Agnolotti del Plin">
+                <div class="product-card group" data-category="curtas" data-price="19.00" data-name="Garganelli">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2940&auto=format&fit=crop" alt="Agnolotti del Plin" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-signature">Assinatura</span>
-                            <span class="badge-limited">Limitado</span>
-                        </div>
-                        
+                        <img src="img_garg.jpg" alt="Garganelli" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
+
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -390,7 +370,6 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Carne assada, espinafre, parmesão 24 meses</p>
                                 <p class="font-source-sans text-xs">Tempo de cozimento: 2-3 minutos</p>
                             </div>
                         </div>
@@ -398,10 +377,10 @@
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Agnolotti del Plin
+                            Garganelli
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Especialidade piemontesa com recheio de carne assada e espinafre, massa ultrafina.
+                            Massa riscada em formato de tubinho, enrolada à mão. Ótima com molhos encorpados.
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -427,10 +406,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 38,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Agnolotti del Plin', '38.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Garganelli', '19.00')">
                                 Pedir
                             </button>
                         </div>
@@ -438,14 +417,9 @@
                 </div>
 
                 <!-- Gnocchi di Patate -->
-                <div class="product-card group" data-category="gnocchi" data-price="26.90" data-name="Gnocchi di Patate">
+                <div class="product-card group" data-category="recheados" data-price="20.00" data-name="Lasanha">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.pexels.com/photos/5949888/pexels-photo-5949888.jpeg?auto=compress&cs=tinysrgb&w=2940" alt="Gnocchi di Patate" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-classic">Clássico</span>
-                            <span class="badge-comfort">Comfort</span>
-                        </div>
+                        <img src="img_las.jpg" alt="Lasanha" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
                         
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
@@ -462,18 +436,18 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Batatas selecionadas, farinha 00, ovos</p>
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 2-3 minutos</p>
+                                <p class="font-source-sans text-sm mb-2">Recheios: Carne, Frango ou 4 queijos</p>
+                                <p class="font-source-sans text-xs">Tempo de cozimento: 5-7 minutos</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Gnocchi di Patate
+                            Lasanha
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Gnocchi tradicionais feitos com batatas selecionadas, macios e saborosos.
+                            Clássica em camadas, massa larga e retinha.
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -499,10 +473,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 26,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 20,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Gnocchi di Patate', '26.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Lasanha', '20.00')">
                                 Pedir
                             </button>
                         </div>
@@ -510,14 +484,9 @@
                 </div>
 
                 <!-- Tortellini em Brodo -->
-                <div class="product-card group" data-category="tortellini" data-price="29.90" data-name="Tortellini em Brodo">
+                <div class="product-card group" data-category="fettuccine" data-price="15.00" data-name="Fettuccine">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.pixabay.com/photo/2017/02/15/10/39/salad-2068220_1280.jpg" alt="Tortellini em Brodo" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-soup">Sopa</span>
-                            <span class="badge-winter">Inverno</span>
-                        </div>
+                        <img src="img_fet.jpg" alt="Fettuccine" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy"/>
                         
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
@@ -534,18 +503,17 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Tortellini + caldo de galinha caipira</p>
-                                <p class="font-source-sans text-xs">Tempo de preparo: 5-6 minutos</p>
+                                <p class="font-source-sans text-xs">Tempo de preparo: 7-8 minutos</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Tortellini em Brodo
+                            Fettuccine
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Tortellini servidos no tradicional caldo de galinha caipira, perfeito para dias frios.
+                            Tirinhas largas e planas. Ideal pra molhos cremosos e bem temperados!
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -571,10 +539,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 29,90</span>
-                                <p class="font-source-sans text-sm text-text-secondary">Serve 1 pessoa</p>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 15,00</span>
+                                <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoa</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Tortellini em Brodo', '29.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Fettuccine', '15.00')">
                                 Pedir
                             </button>
                         </div>
@@ -582,15 +550,10 @@
                 </div>
 
                 <!-- Ravioli Quattro Formaggi -->
-                <div class="product-card group" data-category="ravioli" data-price="31.90" data-name="Ravioli Quattro Formaggi">
+                <div class="product-card group" data-category="nhoque" data-price="19.00" data-name="Nhoque recheado">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?q=80&w=2940&auto=format&fit=crop" alt="Ravioli Quattro Formaggi" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4198015/pexels-photo-4198015.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
-                        
-                        <div class="absolute top-3 left-3 flex flex-col gap-2">
-                            <span class="badge-cheese">4 Queijos</span>
-                            <span class="badge-rich">Cremoso</span>
-                        </div>
-                        
+                        <img src="img_nhoq2.jpg" alt="Nhoque recheado" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy"/>
+
                         <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <button class="quick-action-btn" title="Adicionar aos favoritos">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -606,7 +569,7 @@
 
                         <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                             <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Ingredientes: Parmesão, gorgonzola, ricota, mozzarella</p>
+                                <p class="font-source-sans text-sm mb-2">Recheios: 4 queijos, frango ou carne</p>
                                 <p class="font-source-sans text-xs">Tempo de cozimento: 3-4 minutos</p>
                             </div>
                         </div>
@@ -614,10 +577,10 @@
 
                     <div class="space-y-3">
                         <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Ravioli Quattro Formaggi
+                            Nhoque
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Combinação perfeita de quatro queijos nobres em massa fresca artesanal.
+                            Macio e leve, feito com batata de verdade. Vai bem com qualquer molho, é puro aconchego!
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -643,10 +606,10 @@
 
                         <div class="flex items-center justify-between">
                             <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 31,90</span>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
                             </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Ravioli Quattro Formaggi', '31.90')">
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Nhoque', '19.00')">
                                 Pedir
                             </button>
                         </div>
@@ -691,14 +654,10 @@
                 <!-- Brand Info -->
                 <div class="md:col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
-                        <svg class="w-12 h-12 text-accent" viewBox="0 0 48 48" fill="currentColor">
-                            <path d="M24 4L8 12v8c0 10 6 18.5 16 20 10-1.5 16-10 16-20v-8L24 4zm-2 32h4v4h-4v-4zm0-16h4v12h-4V20z"/>
-                            <rect x="18" y="14" width="12" height="2" rx="1"/>
-                            <rect x="16" y="18" width="16" height="2" rx="1"/>
-                        </svg>
+                        <img src="logotipo.png" alt="Lá de Casa Artisanal Logo" class="w-12 h-12 object-contain" style="width: 80px; height: 80px;" />
                         <div>
                             <h3 class="font-playfair font-bold text-2xl text-accent">Lá de Casa</h3>
-                            <p class="font-dancing text-lg">Artisanal</p>
+                            <p class="font-dancing text-lg">Artesanal</p>
                         </div>
                     </div>
                     <p class="font-source-sans text-gray-300 leading-relaxed mb-6">
@@ -706,7 +665,7 @@
                         levamos o sabor autêntico das receitas tradicionais com ingredientes selecionados e muito carinho.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://instagram.com/ladecasaartisanal" target="_blank" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-600 transition-colors">
+                        <a href="https://instagram.com/massas_ladecasa" target="_blank" class="w-10 h-10 bg-accent rounded-full flex items-center justify-center hover:bg-accent-600 transition-colors">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                             </svg>
@@ -753,7 +712,7 @@
             <div class="border-t border-gray-600 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="font-source-sans text-gray-400 text-sm">
-                        © 2025 Lá de Casa Artisanal. Todos os direitos reservados.
+                        © 2025 Lá de Casa Artesanal. Todos os direitos reservados.
                     </p>
                     <p class="font-source-sans text-gray-400 text-sm mt-4 md:mt-0">
                         Feito com ❤️ para levar o melhor da tradição italiana para sua mesa
