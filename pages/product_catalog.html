@@ -94,9 +94,6 @@
                     <button class="filter-btn" data-filter="nhoque">
                         Nhoque
                     </button>
-                    <button class="filter-btn" data-filter="curtas">
-                        Curtas
-                    </button>
                     <button class="filter-btn" data-filter="recheados">
                         Recheados
                     </button>
@@ -148,7 +145,7 @@
                 <!-- Ravioli de Ricota e Espinafre -->
                 <div class="product-card group" data-category="recheados" data-price="17.00" data-name="Sofiatelli">
                     <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="img_sof.jpg" alt="Sofiatelli" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=2940'; this.onerror=null;" />
+                        <img src="img_sof.jpg" alt="Sofiatelli" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
                         
                         
                         <!-- Quick Actions -->
@@ -179,7 +176,7 @@
                             Sofiatelli
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Massa recheada, dobrada com carinho. Ideal com molhos cremosos e sabores marcantes.
+                            Massa dobrada com recheio cremoso e temperado na medida certa. O sofiatelli é delicado, mas cheio de sabor – um clássico que derrete na boca.
                         
                         </p>
                         
@@ -217,8 +214,8 @@
                     </div>
                 </div>
 
-                <!-- Cappelletti da Nonna -->
-                <div class="product-card group" data-category="recheados" data-price="17.00" data-name="Caneloe">
+                <!-- Canelone -->
+                <div class="product-card group" data-category="recheados" data-price="17.00" data-name="Canelone">
                     <div class="relative overflow-hidden rounded-lg mb-4">
                         <img src="img_hist1.jpg" alt="Cappelletti da Nonna" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/07/18/19/12/pasta-3547078_1280.jpg'; this.onerror=null;" />
                         
@@ -248,7 +245,7 @@
                             Canelone
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Tubo de massa recheado, enrolado com sabor. Perfeito gratinado com molho!
+                            Enroladinho de massa recheada, coberto com molho e queijo. O canelone do “Lá de Casa” é a pedida certa pra quem quer praticidade com gostinho de comida feita na hora.
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -284,139 +281,9 @@
                     </div>
                 </div>
 
-                <!-- Tortellini ai Funghi -->
-                <div class="product-card group" data-category="curtas" data-price="19.00" data-name="Farfalle">
-                    <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="img_farf.jpg" alt="Farfalle" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
-                        
-                        <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="quick-action-btn" title="Adicionar aos favoritos">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                                </svg>
-                            </button>
-                            <button class="quick-action-btn" title="Comparar">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                            </button>
-                        </div>
 
-                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 5-6 minutos</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="space-y-3">
-                        <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Farfalle
-                        </h3>
-                        <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Massa em formato de gravata, leve e versátil. Vai bem com molhos suaves.
-                        </p>
-                        
-                        <div class="flex items-center space-x-2">
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                            </div>
-                            <span class="font-source-sans text-sm text-text-secondary">(18 avaliações)</span>
-                        </div>
-
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
-                                <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
-                            </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Farfalle', '19.00')">
-                                Pedir
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Agnolotti del Plin -->
-                <div class="product-card group" data-category="curtas" data-price="19.00" data-name="Garganelli">
-                    <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="img_garg.jpg" alt="Garganelli" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
-
-                        <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="quick-action-btn" title="Adicionar aos favoritos">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                                </svg>
-                            </button>
-                            <button class="quick-action-btn" title="Comparar">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 2-3 minutos</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-3">
-                        <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Garganelli
-                        </h3>
-                        <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Massa riscada em formato de tubinho, enrolada à mão. Ótima com molhos encorpados.
-                        </p>
-                        
-                        <div class="flex items-center space-x-2">
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                            </div>
-                            <span class="font-source-sans text-sm text-text-secondary">(12 avaliações)</span>
-                        </div>
-
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
-                                <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
-                            </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Garganelli', '19.00')">
-                                Pedir
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gnocchi di Patate -->
+                <!-- Lasanha -->
                 <div class="product-card group" data-category="recheados" data-price="20.00" data-name="Lasanha">
                     <div class="relative overflow-hidden rounded-lg mb-4">
                         <img src="img_las.jpg" alt="Lasanha" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
@@ -447,7 +314,7 @@
                             Lasanha
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Clássica em camadas, massa larga e retinha.
+                            Camadas de massa fresca, molho caseiro e muito recheio.
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -483,7 +350,74 @@
                     </div>
                 </div>
 
-                <!-- Tortellini em Brodo -->
+                <!-- Nhoque -->
+                <div class="product-card group" data-category="recheados" data-price="20.00" data-name="Nhoque">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="img_nhoq2.jpg" alt="Nhoque" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
+                        
+                        <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="quick-action-btn" title="Adicionar aos favoritos">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </button>
+                            <button class="quick-action-btn" title="Comparar">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white w-full">
+                                <p class="font-source-sans text-sm mb-2">Recheios: Carne, Frango ou 4 queijos</p>
+                                <p class="font-source-sans text-xs">Tempo de cozimento: 5-6 minutos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
+                            Nhoque recheado
+                        </h3>
+                        <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
+                            Macio por fora, recheado por dentro: nosso nhoque é puro carinho em forma de massa. Recheios variados e muito sabor pra deixar qualquer refeição especial.
+                        </p>
+                        
+                        <div class="flex items-center space-x-2">
+                            <div class="flex space-x-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                            <span class="font-source-sans text-sm text-text-secondary">(27 avaliações)</span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 20,00</span>
+                                <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
+                            </div>
+                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Nhoque', '20.00')">
+                                Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fettuccine -->
                 <div class="product-card group" data-category="fettuccine" data-price="15.00" data-name="Fettuccine">
                     <div class="relative overflow-hidden rounded-lg mb-4">
                         <img src="img_fet.jpg" alt="Fettuccine" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy"/>
@@ -513,7 +447,7 @@
                             Fettuccine
                         </h3>
                         <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Tirinhas largas e planas. Ideal pra molhos cremosos e bem temperados!
+                            Fitas largas de massa artesanal, perfeitas pra segurar aquele molho caprichado. No “Lá de Casa”, o fettuccine é puro sabor e tradição italiana com alma gaúcha!
                         </p>
                         
                         <div class="flex items-center space-x-2">
@@ -543,73 +477,6 @@
                                 <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoa</p>
                             </div>
                             <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Fettuccine', '15.00')">
-                                Pedir
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ravioli Quattro Formaggi -->
-                <div class="product-card group" data-category="nhoque" data-price="19.00" data-name="Nhoque recheado">
-                    <div class="relative overflow-hidden rounded-lg mb-4">
-                        <img src="img_nhoq2.jpg" alt="Nhoque recheado" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy"/>
-
-                        <div class="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <button class="quick-action-btn" title="Adicionar aos favoritos">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                                </svg>
-                            </button>
-                            <button class="quick-action-btn" title="Comparar">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <div class="p-4 text-white w-full">
-                                <p class="font-source-sans text-sm mb-2">Recheios: 4 queijos, frango ou carne</p>
-                                <p class="font-source-sans text-xs">Tempo de cozimento: 3-4 minutos</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-3">
-                        <h3 class="font-playfair font-bold text-xl text-secondary group-hover:text-primary transition-colors">
-                            Nhoque
-                        </h3>
-                        <p class="font-source-sans text-text-secondary text-sm leading-relaxed">
-                            Macio e leve, feito com batata de verdade. Vai bem com qualquer molho, é puro aconchego!
-                        </p>
-                        
-                        <div class="flex items-center space-x-2">
-                            <div class="flex space-x-1">
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                                <svg class="w-4 h-4 text-border" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                </svg>
-                            </div>
-                            <span class="font-source-sans text-sm text-text-secondary">(19 avaliações)</span>
-                        </div>
-
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <span class="font-montserrat font-bold text-2xl text-primary">R$ 19,00</span>
-                                <p class="font-source-sans text-sm text-text-secondary">Serve 2 pessoas</p>
-                            </div>
-                            <button class="btn-primary text-sm px-4 py-2" onclick="orderWhatsApp('Nhoque', '19.00')">
                                 Pedir
                             </button>
                         </div>
